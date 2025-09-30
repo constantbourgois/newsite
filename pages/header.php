@@ -14,6 +14,8 @@
         <p class="subtitle">Je code des choses merveilleusement simples, et j'aime ce que je fais</p>
 
         <div class="profile-image"><img src="img/avatar.svg"></div>
-
+        <div class="workspace">
+                <img src="img/workspace.png" alt="workspace"/>
+          </div>
 
     </section>
