@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: unset;
+    --purplebeli: #2b2f45;
+}
+
+img,
+svg {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    line-height: 1.6;
+    color: var(--purplebeli);
+}
+
+.cb-icon {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    flex-direction: row;
+}
+
+.cb-icon div {
+    line-height: 0;
+}
+
+.cb-icon div:nth-child(2) {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 6px;
+}
+
+.contact-btn {
+    font-size: 1.5rem;
+    border: 1px solid var(--purplebeli);
+    padding: 5px 15px;
+    border-radius: 8px;
+
+}
+
+.contact-btn:hover {
+    color: white;
+    background-color: var(--purplebeli);
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header .subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.profile-image {
+    max-width: 20%;
+    margin: 0 auto;
+}
+
+.workspace {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    height: 200px;
+    bottom: 185px;
+
+}
+
+.cat {
+    bottom: 34px;
+    z-index: -1;
+}
+
+
+/* About Section */
+.about {
+    background: var(--purplebeli);
+    color: white;
+    text-align: center;
+    margin-top: 240px;
+    padding-bottom: 135px;
+
+}
+
+.about h2 {
+    font-size: 2.2rem;
+    padding-bottom: 30px;
+}
+
+.about p {
+    max-width: 800px;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Services Section */
+.services {
+    padding: 0 20px 80px 20px;
+
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    bottom: 55px;
+    position: relative;
+}
+
+.service-card {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0.6s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.service-card p {
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+/* Projects Section */
+.projects {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.projects-intro {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    color: #7f8c8d;
+}
+
+.projects-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+}
+
+.project-logo {
+    width: 120px;
+    height: 80px;
+    background: #3498db;
+    margin: 0 auto 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0.6s;
+}
+
+.project-logo:hover {
+    transform: scale(1.05);
+}
+
+.project-logo:nth-child(1) {
+    background: #e74c3c;
+}
+
+.project-logo:nth-child(2) {
+    background: #f39c12;
+}
+
+.project-logo:nth-child(3) {
+    background: #2ecc71;
+}
+
+.project-logo:nth-child(4) {
+    background: #9b59b6;
+}
+
+.project-logo:nth-child(5) {
+    background: #34495e;
+}
+
+/* Skills Section */
+.skills {
+    padding: 80px 20px;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.skills-subtitle {
+    margin-bottom: 50px;
+    color: #bdc3c7;
+}
+
+.skills-chart {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    align-items: end;
+}
+
+.skill-bar {
+    text-align: center;
+}
+
+.skill-name {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: #bdc3c7;
+}
+
+.bar {
+    width: 50px;
+    height: 200px;
+    margin: 0 auto 10px;
+    background: #34495e;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bar-fill {
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    border-radius: 25px;
+    transition: height 2s ease;
+}
+
+/* Bar fill animations with different percentages */
+.skill-bar:nth-child(1) .bar-fill {
+    height: 95%;
+    --target-height: 95%;
+    animation: fillBar 2s ease 0s 1 normal forwards;
+}
+
+.skill-bar:nth-child(2) .bar-fill {
+    height: 90%;
+    --target-height: 90%;
+    animation: fillBar 2s ease 0s 1 normal forwards;
+}
+
+.skill-bar:nth-child(3) .bar-fill {
+    height: 95%;
+    --target-height: 95%;
+    animation: fillBar 2s ease 0s 1 normal forwards;
+}
+
+.skill-bar:nth-child(4) .bar-fill {
+    height: 65%;
+    --target-height: 65%;
+    animation: fillBar 2s ease 0s 1 normal forwards;
+}
+
+.skill-bar:nth-child(5) .bar-fill {
+    height: 45%;
+    --target-height: 45%;
+    animation: fillBar 2s ease 0s 1 normal forwards;
+}
+
+.skill-percentage {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .workspace {
+        padding: 10px;
+    }
+
+    .laptop {
+        width: 250px;
+        height: 160px;
+    }
+
+    .accessories,
+    .books {
+        display: none;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-chart {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-card,
+.project-logo {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.service-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.service-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fillBar {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: var(--target-height);
+    }
+}
