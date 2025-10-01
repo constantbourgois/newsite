@@ -70,6 +70,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px;
 }
 
 .header h1 {
@@ -191,18 +192,18 @@ width: 100%;
 }
 
 .projects-grid {
-    max-width: 1000px;
+    max-width: 600px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 30px;
+    margin-bottom: 20px;
 }
 
 .project-logo {
     width: 120px;
     height: 80px;
-    background: #3498db;
-    margin: 0 auto 15px;
+    margin: 0 auto;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -214,30 +215,15 @@ width: 100%;
     transform: translateY(0px);
     transition: 0.6s;
 }
+.project-logo img {
+    max-height: 100%;
+    max-width: auto;
+}
 
 .project-logo:hover {
     transform: scale(1.05);
 }
 
-.project-logo:nth-child(1) {
-    background: #e74c3c;
-}
-
-.project-logo:nth-child(2) {
-    background: #f39c12;
-}
-
-.project-logo:nth-child(3) {
-    background: #2ecc71;
-}
-
-.project-logo:nth-child(4) {
-    background: #9b59b6;
-}
-
-.project-logo:nth-child(5) {
-    background: #34495e;
-}
 
 /* Skills Section */
 .skills {

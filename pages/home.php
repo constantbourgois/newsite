@@ -1,5 +1,5 @@
-    <!-- About Section -->    
-     <section class="about">
+    <!-- About Section -->
+    <section class="about">
         <h2>Bonjour, je m'appelle Constant.</h2>
         <p>Développeur web freelance depuis 7 ans, j'aide agences et startups à transformer leurs idées en produits
             numériques performants.</p>
@@ -20,28 +20,28 @@
             </div>
             <div class="service-card">
                 <h3>Backend &amp; Engineering</h3>
-                <p>Développement de thèmes et plugins Wordpress, utilisation d'API, prototypage, recherche & test de solutions   </p>
+                <p>Développement de thèmes et plugins Wordpress, utilisation d'API, prototypage, recherche & test de solutions </p>
                 <p>Php, Node.js, CodeIgniter, Symfony, Wordpress & Wordpress REST API</p>
             </div>
             <div class="service-card">
                 <h3>Relationnel</h3>
                 <ul>
                     <li>
-                    écoute
-                </li>
-                <li>
-                    découverte du besoin
-                </li>
-                 <li>
-                    gestion de projet
-                </li>
-                 <li>
-                    collaboration
-                </li>
-                 <li>
-                   vision produit
-                </li>
-            </ul>
+                        écoute
+                    </li>
+                    <li>
+                        découverte du besoin
+                    </li>
+                    <li>
+                        gestion de projet
+                    </li>
+                    <li>
+                        collaboration
+                    </li>
+                    <li>
+                        vision produit
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -50,33 +50,22 @@
     <section class="projects">
         <h2>Mes projets à l'avant</h2>
         <p class="projects-intro">
-            Voici quelques projets de design sur lesquels j'ai travaillé.<br>
-            Envie d'en voir plus? Contactez-moi par e-mail.
+            Voici quelques projets sur lesquels j'ai travaillé.<br>
+            Envie d'en voir plus? Contactez-moi.
         </p>
         <div class="projects-grid">
-            <div>
-                <div class="project-logo">FFF</div>
-            </div>
-            <div>
-                <div class="project-logo">IMI</div>
-            </div>
-            <div>
-                <div class="project-logo">GEN</div>
-            </div>
-            <div>
-                <div class="project-logo">DUEL</div>
-            </div>
-            <div>
-                <div class="project-logo">PAR</div>
-            </div>
-            <div>
-                <div class="project-logo">HEX</div>
-            </div>
+            <a class="project-logo"><img src="img/logo-fff.svg" alt="fff" /></a>
+            <a class="project-logo"><img src="img/logo-norgren.png" alt="fff" /></a>
+            <a class="project-logo"><img src="img/logo-gn.webp" alt="fff" /></a>
+            <a class="project-logo"><img src="img/logo-duel.svg" alt="fff" /></a>
+            <a class="project-logo"><img src="img/logo-sunevasion.svg" alt="fff" /></a>
+            <a class="project-logo"><img src="img/logo-mafc.png" alt="fff" /></a>
         </div>
+        <a class="contact-btn" href="pages/contact.php"> contact </a>
     </section>
 
     <!-- Skills Section -->
-    <section class="skills">
+    <!--section class="skills">
         <h2>D'autres compétences</h2>
         <p class="skills-subtitle">qui pourraient s'avérer utiles</p>
 
@@ -117,4 +106,4 @@
                 <div class="skill-percentage">45%</div>
             </div>
         </div>
-    </section>
+    </section!-->
