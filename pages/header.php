@@ -8,7 +8,7 @@
                     <div>&#62;</div>
                 </a>
             
-            <a class="contact-btn" href="#">contact</a>
+            <a class="contact-btn" href="#" onclick="openContact()">Contactez-moi</a>
         </div>
         <h1>Développeur et intégrateur web</h1>
         <p class="subtitle">Je code des choses merveilleusement simples, et j'aime ce que je fais</p>

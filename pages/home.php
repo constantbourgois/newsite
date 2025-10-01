@@ -61,9 +61,24 @@
             <a class="project-logo"><img src="img/logo-sunevasion.svg" alt="fff" /></a>
             <a class="project-logo"><img src="img/logo-mafc.png" alt="fff" /></a>
         </div>
-        <a class="contact-btn" href="pages/contact.php"> contact </a>
+        <a class="contact-btn" onclick="openContact()" href="#"> Contactez-moi </a>
     </section>
-
+    <section style="display:none" class="contact">
+        <div id="thankyou-message">
+            Merci !
+        </div>
+        <form id="contactform" action="" method="post">
+            <h4 id="titlecontact">Contactez-moi !</h4>
+            <label for="u_name">Nom</label>
+            <input type="text" id="u_name" name="u_name" placeholder="Votre nom" required />
+            <label for="u_email">Email</label>
+            <input type="email" id="u_email" name="u_email" placeholder="Votre e-mail" required />
+            <label for="message">Un petit mot</label>
+            <textarea name="message" id="message" rows="6" cols="45" placeholder="Laissez-moi un petit mot" required></textarea>
+            <input id="submit" type="submit" value="Envoyer" class="valider" />
+        </form>
+        <button class="close-btn" onclick="closeContact()" aria-label="Fermer le formulaire">×</button>
+    </section>
     <!-- Skills Section -->
     <!--section class="skills">
         <h2>D'autres compétences</h2>

@@ -1,40 +1,44 @@
 <?php
-	// write in databse//
 
-   	$host = 'db631353762.db.1and1.com';
-	$dbname = 'db631353762';
-	
-	
-	try {
-	$dbh = new PDO("mysql:host=$host;dbname=$dbname", 'dbo631353762', 'miaumonster');
-	
+    // Sanitize user input
+    $u_name = htmlspecialchars(trim($_POST['u_name'] ?? ''));
+    // Remove line breaks and special characters from name to prevent header injection
+    $u_name = preg_replace('/[\r\n]+/', ' ', $u_name);
+    $u_name = strip_tags($u_name);
+    $u_name = htmlspecialchars($u_name, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 
+    $u_email = filter_var(trim($_POST['u_email'] ?? ''), FILTER_SANITIZE_EMAIL);
+    if (!filter_var($u_email, FILTER_VALIDATE_EMAIL)) {
+        // Handle invalid email address
+        echo 'invalid_email';
+        exit;
+    }
+    // Remove line breaks from email to prevent header injection
+    $u_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $u_email);
 
-	} catch (PDOException $e) {
-	print "Erreur !: " . $e->getMessage() . "<br/>";
-	die();
-	}
+    $user_message = htmlspecialchars(trim($_POST['message'] ?? ''));
 
+    // Send email
+    $to      = 'constantbourgois@gmail.com';
+    $subject = 'contact site web';
 
-	$req = $dbh->prepare('INSERT INTO ID(Name,Email,Text) VALUES(:u_name, :u_email, :message)');
-	$req->execute(array(
-	'u_name' => $_POST['u_name'],
-	'u_email' => $_POST['u_email'],
-	'message' => $_POST['message'],
-	));
+    // Prepare the message
+    $message = "Name: $u_name\n";
+    $message .= "Email: $u_email\n";
+    $message .= "Message:\n$user_message\n";
 
-	//send email//
-     $to      = 'contact@monstertruckagency.com';
-     $subject = 'contact site web';
-     $message = 'from: '.' '.$_POST['u_name'] . ' ' . $_POST['u_email'] . ' ' . $_POST['message'];
-    
+    // Prepare headers
+    $headers = "From: $u_name <$u_email>\r\n";
+    $headers .= "Reply-To: $u_email\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-     mail($to, $subject, $message, $headers);
- 
-
-	echo '<div id="outputmessage">Miauuu!</div>';
-?>
-
-
-
-
+	if (mail($to, $subject, $message, $headers)) {
+		// Send back to client
+    echo 'mail_sent';
+    exit;
+} else {
+    //send back to client
+    echo 'mail_failed';
+    exit;
+}
+   

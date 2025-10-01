@@ -6,12 +6,14 @@
     color: unset;
     --purplebeli: #333247;
     --blanccreme: #fbfbfeff;
-        letter-spacing: 1px;
+    letter-spacing: 1px;
 }
 
-ul,li{
+ul,
+li {
     list-style: none;
 }
+
 img,
 svg {
     max-width: 100%;
@@ -66,6 +68,11 @@ body {
     justify-content: center;
 }
 
+.header>* {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
 .sub-header {
     display: flex;
     justify-content: space-between;
@@ -85,15 +92,17 @@ body {
 }
 
 .profile-image {
-    max-width: 17%;
+    width: 150px;
     margin: 0 auto;
+    padding:0;
 }
 
 .workspace {
-width: 100%;
+    width: 100%;
+    padding: 0;
     margin: 0 auto;
     display: flex;
-        margin-bottom: -.1rem;
+    margin-bottom: -.1rem;
 
 }
 
@@ -164,12 +173,14 @@ width: 100%;
     color: #2c3e50;
 }
 
-.service-card p,.service-card li {
+.service-card p,
+.service-card li {
     color: #7f8c8d;
     line-height: 1.6;
-     padding: 10px;
+    padding: 10px;
 }
-.service-card li{
+
+.service-card li {
     padding: 10px;
 }
 
@@ -215,6 +226,7 @@ width: 100%;
     transform: translateY(0px);
     transition: 0.6s;
 }
+
 .project-logo img {
     max-height: 100%;
     max-width: auto;
@@ -278,6 +290,149 @@ width: 100%;
     transition: height 2s ease;
 }
 
+
+/* Contact Section */
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(51, 50, 71, 0.85);
+    /* semi-transparent overlay */
+    z-index: 1000;
+    animation: fadeInUp 0.5s;
+}
+
+.contact form {
+    background: var(--blanccreme);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(51, 50, 71, 0.18);
+    padding: 60px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    min-width: 320px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    animation: fadeInUp 0.7s;
+}
+
+.contact form label {
+    font-weight: 600;
+    color: var(--purplebeli);
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 12px 14px;
+    border: 1px solid #d1d1e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f7f7fb;
+    color: var(--purplebeli);
+    transition: border-color 0.2s;
+    resize: none;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: var(--purplebeli);
+    outline: none;
+    background: #fff;
+}
+
+.contact form button[type="submit"] {
+    background: var(--purplebeli);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(51, 50, 71, 0.08);
+}
+
+.contact form button[type="submit"]:hover {
+    background: #4b4970;
+    color: #fff;
+}
+
+#thankyou-message{
+    display: none;
+    margin: 20px 0px;
+    color: var(--purplebeli);
+    background-color: var(--blanccreme);
+    padding: 30px 100px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+
+.close-btn {
+position: absolute;
+    top: 50px;
+    right: 75px;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    color: var(--purplebeli);
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blanccreme);
+}
+
+.close-btn:hover {
+    background: #ececf6;
+}
+
+@media (max-width: 600px) {
+    .contact form {
+        padding: 30px 30px 20px 30px;
+        min-width: unset;
+        max-width: 98vw;
+        gap: 18px;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeout {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
 /* Bar fill animations with different percentages */
 .skill-bar:nth-child(1) .bar-fill {
     height: 95%;
@@ -319,7 +474,6 @@ width: 100%;
     .header h1 {
         font-size: 2rem;
     }
-
 
 
     .laptop {
