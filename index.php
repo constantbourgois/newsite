@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/avatar.svg" type="image/x-icon" sizes="16x16">
+    <link rel="icon" href="img/avatar.png" type="image/x-icon" sizes="16x16">
     <script src="scripts.js"></script>
 </head>
 <body>

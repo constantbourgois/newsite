@@ -79,9 +79,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-   @media (max-width: 600px) {
-        
-    }
+
+    @media (max-width: 600px) {}
 }
 
 .header h1 {
@@ -99,10 +98,14 @@ body {
     width: 250px;
     margin: 0 auto;
     padding: 0;
-   @media (max-width: 768px) {
-    width:150px;
-        
+}
+
+@media (max-width: 768px) {
+    .profile-image {
+        width: 150px;
+
     }
+
 }
 
 .workspace {
@@ -245,7 +248,7 @@ body {
 }
 
 
-.projects .contact-btn{
+.projects .contact-btn {
     margin-top: 20px;
 }
 
@@ -386,6 +389,7 @@ body {
     padding: 30px 100px;
     border-radius: 10px;
     font-size: 1.3rem;
+    border:1px solid var(--purplebeli);
 }
 
 .close-btn {
@@ -484,43 +488,46 @@ body {
 
 /**** footer clair ****/
 .site-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: var(--blanccreme);
-  color: var(--purplebeli);
+    text-align: center;
+    padding: 2rem 1rem;
+    background: var(--blanccreme);
+    color: var(--purplebeli);
 }
 
 
 .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1rem;
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 20px;
 }
 
 .social-links .icon {
-  width: 32px;
-  height: 32px;
-  fill: var(--purplebeli);
-  transition: all 0.3s ease;
+    width: 32px;
+    height: 32px;
+    fill: var(--purplebeli);
+    transition: all 0.3s ease;
 }
 
 .social-links a[aria-label="LinkedIn"]:hover .icon {
-  fill: #0077b5; /* LinkedIn blue */
+    fill: #0077b5;
+    /* LinkedIn blue */
 }
 
 .social-links a[aria-label="Instagram"]:hover .icon {
-  fill: #e1306c; /* Instagram pink */
+    fill: #e1306c;
+    /* Instagram pink */
 }
 
 .social-links a[aria-label="Malt"]:hover .icon {
-  fill: #ff7043; /* Malt orange */
+    fill: #ff7043;
+    /* Malt orange */
 }
 
 .footer-text {
-  font-size: 0.85rem;
-  opacity: 0.7;
+    font-size: 0.85rem;
+    opacity: 0.7;
 }
 
 /* Responsive Design */

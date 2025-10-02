@@ -82,7 +82,7 @@
         <div id="thankyou-message">
             Merci !
         </div>
-        <form id="contactform" action="" method="post">
+        <form id="contactform" method="post">
             <h4 id="titlecontact">Contactez-moi !</h4>
             <label for="u_name">Nom</label>
             <input type="text" id="u_name" name="u_name" placeholder="Votre nom" required />
