@@ -95,7 +95,7 @@
         <button class="close-btn" onclick="closeContact()" aria-label="Fermer le formulaire">×</button>
     </section>
     <!-- Skills Section -->
-    <!--section class="skills">
+    <section class="skills">
         <h2>D'autres compétences</h2>
         <p class="skills-subtitle">qui pourraient s'avérer utiles</p>
 
@@ -136,4 +136,4 @@
                 <div class="skill-percentage">45%</div>
             </div>
         </div>
-    </section!-->
+    </section>

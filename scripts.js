@@ -21,7 +21,7 @@ document.querySelectorAll('.service-card, .project-logo').forEach(el => {
     observer.observe(el);
 });
 
-// Animate skill bars on scroll
+// Display skill bars on scroll
 const skillsSection = document.querySelector('.skills');
 const skillBars = document.querySelectorAll('.bar-fill');
 
@@ -29,15 +29,14 @@ const skillsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             skillBars.forEach(bar => {
-                bar.style.animation = 'none';
-                bar.offsetHeight; // Trigger reflow
-                bar.style.animation = 'fillBar 2s ease forwards';
+                const percentage = bar.getAttribute('data-percentage');
+                bar.style.height = `${percentage}%`;
             });
         }
     });
 }, { threshold: 0.5 });
 
-//skillsObserver.observe(skillsSection);
+skillsObserver.observe(skillsSection);
 
 // Add CSS animation for skill bars
 const style = document.createElement('style');
