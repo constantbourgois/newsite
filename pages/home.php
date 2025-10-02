@@ -76,50 +76,33 @@
                 <img src="img/logo-mafc.png" alt="MAFC logo with blue and white color scheme, text MAFC, formal and trustworthy appearance, simple background" />
             </a>
         </div>
-          <a class="contact-btn" href="#" onclick="openContact(event)">Contactez-moi</a>
     </section>
-    <section style="display:none" class="contact">
-        <div id="thankyou-message">
-            Merci !
-        </div>
-        <form id="contactform" method="post">
-            <h4 id="titlecontact">Contactez-moi !</h4>
-            <label for="u_name">Nom</label>
-            <input type="text" id="u_name" name="u_name" placeholder="Votre nom" required />
-            <label for="u_email">Email</label>
-            <input type="email" id="u_email" name="u_email" placeholder="Votre e-mail" required />
-            <label for="message">Un petit mot</label>
-            <textarea name="message" id="message" rows="6" cols="45" placeholder="Laissez-moi un petit mot" required></textarea>
-            <input id="submit" type="submit" value="Envoyer" class="valider" />
-        </form>
-        <button class="close-btn" onclick="closeContact()" aria-label="Fermer le formulaire">×</button>
-    </section>
+
     <!-- Skills Section -->
     <section class="skills">
-        <h2>D'autres compétences</h2>
-        <p class="skills-subtitle">qui pourraient s'avérer utiles</p>
-
+        <h2>D'autres compétences qui pourraient s'avérer utiles</h2>
+        
         <div class="skills-chart">
             <div class="skill-bar">
-                <div class="skill-name">Jedi</div>
+                <div class="skill-name">Support téléphonique</div>
                 <div class="bar">
-                    <div class="bar-fill" data-percentage="95"></div>
+                    <div class="bar-fill" data-percentage="75"></div>
                 </div>
-                <div class="skill-percentage">95%</div>
+                <div class="skill-percentage">75%</div>
             </div>
             <div class="skill-bar">
-                <div class="skill-name">Ninja</div>
+                <div class="skill-name">Buveur de café</div>
                 <div class="bar">
-                    <div class="bar-fill" data-percentage="90"></div>
+                    <div class="bar-fill" data-percentage="85"></div>
                 </div>
-                <div class="skill-percentage">90%</div>
+                <div class="skill-percentage">85%</div>
             </div>
             <div class="skill-bar">
-                <div class="skill-name">Geek</div>
+                <div class="skill-name">Commercial</div>
                 <div class="bar">
-                    <div class="bar-fill" data-percentage="95"></div>
+                    <div class="bar-fill" data-percentage="55"></div>
                 </div>
-                <div class="skill-percentage">95%</div>
+                <div class="skill-percentage">55%</div>
             </div>
             <div class="skill-bar">
                 <div class="skill-name">Musicien</div>
@@ -136,4 +119,20 @@
                 <div class="skill-percentage">45%</div>
             </div>
         </div>
+    </section>
+        <section style="display:none" class="contact">
+        <div id="thankyou-message">
+            Merci !
+        </div>
+        <form id="contactform" method="post">
+            <h4 id="titlecontact">Contactez-moi !</h4>
+            <label for="u_name">Nom</label>
+            <input type="text" id="u_name" name="u_name" placeholder="Votre nom" required />
+            <label for="u_email">Email</label>
+            <input type="email" id="u_email" name="u_email" placeholder="Votre e-mail" required />
+            <label for="message">Un petit mot</label>
+            <textarea name="message" id="message" rows="6" cols="45" placeholder="Laissez-moi un petit mot" required></textarea>
+            <input id="submit" type="submit" value="Envoyer" class="valider" />
+        </form>
+        <button class="close-btn" onclick="closeContact()" aria-label="Fermer le formulaire">×</button>
     </section>

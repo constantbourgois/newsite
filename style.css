@@ -28,6 +28,15 @@ body {
     background: var(--blanccreme);
 }
 
+h2{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+main{
+    text-align: center;
+}
+
 .cb-icon {
     font-size: 2.5rem;
     display: flex;
@@ -52,6 +61,7 @@ body {
     padding: 5px 15px;
     border-radius: 8px;
     display: inline-block;
+    margin: 0 auto;
 
 }
 
@@ -79,8 +89,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+}
 
-    @media (max-width: 600px) {}
+.sub-header .contact-btn{
+   margin: 0;
 }
 
 .header h1 {
@@ -210,7 +222,7 @@ body {
 .projects-intro {
     max-width: 600px;
     margin: 0 auto 50px;
-    color: #7f8c8d;
+    font-size: 1.2rem;
 }
 
 .projects-grid {
@@ -252,58 +264,6 @@ body {
     margin-top: 20px;
 }
 
-/* Skills Section */
-.skills {
-    padding: 80px 20px;
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-}
-
-.skills h2 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-}
-
-.skills-subtitle {
-    margin-bottom: 50px;
-    color: #bdc3c7;
-}
-
-.skills-chart {
-    max-width: 800px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    align-items: end;
-}
-
-.skill-bar {
-    text-align: center;
-}
-
-.skill-name {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-    color: #bdc3c7;
-}
-
-.bar {
-    width: 50px;
-    height: 200px;
-    margin: 0 auto 10px;
-    background: #34495e;
-    border-radius: 25px;
-    overflow: hidden;
-    position: relative;
-}
-
-.bar-fill {
-    background: linear-gradient(45deg, #3498db, #2ecc71);
-    border-radius: 25px;
-    transition: height 2s ease;
-}
 
 
 /* Contact Section */
@@ -448,31 +408,65 @@ body {
     -webkit-animation-name: fadeOut;
     animation-name: fadeOut;
 }
-.skill-bar:nth-child(1) .bar-fill {
-    height: 95%;
+/* Skills Section */
+/* Skills Section */
+.skills {
+    padding: 0px 20px;
+    background: var(--blanccreme);
+    text-align: center;
 }
 
-.skill-bar:nth-child(2) .bar-fill {
-    height: 90%;
+.skills h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
 }
 
-.skill-bar:nth-child(3) .bar-fill {
-    height: 95%;
+.skills-subtitle {
+    margin-bottom: 50px;
+    color: #bdc3c7;
 }
 
-.skill-bar:nth-child(4) .bar-fill {
-    height: 65%;
+.skills-chart {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    align-items: end;
 }
 
-.skill-bar:nth-child(5) .bar-fill {
-    height: 45%;
+.skill-bar {
+    text-align: center;
 }
+
+.skill-name {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    
+}
+
+.bar {
+    width: 50px;
+    height: 200px;
+    margin: 0 auto 10px;
+   border: 1px solid lightgray;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+.bar-fill{
+        width: 100%;
+    background: var(--purplebeli);
+}
+
+
 
 .skill-percentage {
     font-weight: bold;
     font-size: 1.1rem;
 }
-
 
 /**** footer clair ****/
 .site-footer {
@@ -480,6 +474,7 @@ body {
     padding: 2rem 1rem;
     background: var(--blanccreme);
     color: var(--purplebeli);
+    padding-top:80px;
 }
 
 
@@ -488,7 +483,7 @@ body {
     justify-content: center;
     gap: 2rem;
     margin-bottom: 1rem;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .social-links .icon {
@@ -570,12 +565,3 @@ body {
     animation-delay: 0.4s;
 }
 
-@keyframes fillBar {
-    from {
-        height: 0%;
-    }
-
-    to {
-        height: var(--target-height);
-    }
-}

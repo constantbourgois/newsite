@@ -1,4 +1,5 @@
 <footer class="site-footer">
+<a class="contact-btn" href="#" onclick="openContact(event)">Contactez-moi</a>
   <div class="social-links">
     <!-- LinkedIn -->
     <a href="https://www.linkedin.com/in/constant-bourgois-02a77b11/" target="_blank" rel="noopener" aria-label="LinkedIn">

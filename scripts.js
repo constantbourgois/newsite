@@ -21,37 +21,13 @@ document.querySelectorAll('.service-card, .project-logo').forEach(el => {
     observer.observe(el);
 });
 
-// Display skill bars on scroll
-const skillsSection = document.querySelector('.skills');
-const skillBars = document.querySelectorAll('.bar-fill');
-
-const skillsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            skillBars.forEach(bar => {
-                const percentage = bar.getAttribute('data-percentage');
-                bar.style.height = `${percentage}%`;
-            });
-        }
+// Display skill bars (no animation)
+document.addEventListener('DOMContentLoaded', () => {
+    const skillBars = document.querySelectorAll('.bar-fill');
+    skillBars.forEach(bar => {
+        const percentage = bar.getAttribute('data-percentage');
+        bar.style.height = `${percentage}%`;
     });
-}, { threshold: 0.5 });
-
-skillsObserver.observe(skillsSection);
-
-// Add CSS animation for skill bars
-const style = document.createElement('style');
-style.textContent = `
-            @keyframes fillBar {
-                from { height: 0%; }
-                to { height: var(--target-height); }
-            }
-        `;
-document.head.appendChild(style);
-
-// Set custom properties for each bar
-skillBars.forEach((bar, index) => {
-    const heights = ['95%', '90%', '95%', '65%', '45%'];
-    bar.style.setProperty('--target-height', heights[index]);
 });
 
 
@@ -131,6 +107,3 @@ function closeContact() {
     });
 }
 
-function loadThankyou() {
-
-}
