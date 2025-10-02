@@ -12,15 +12,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js"></script>
 </head>
-
 <body>
     <?php require('pages/header.php'); ?>
-	<?php
-	
-	require('pages/home.php');
-	
-	 ?>
+    <main>
+	<?php require('pages/home.php');?>
+    </main>
+    <?php require('pages/footer.php');?>
     
 </body>
-
 </html>

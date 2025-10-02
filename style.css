@@ -51,6 +51,7 @@ body {
     border: 1px solid var(--purplebeli);
     padding: 5px 15px;
     border-radius: 8px;
+    display: inline-block;
 
 }
 
@@ -78,6 +79,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+   @media (max-width: 600px) {
+        
+    }
 }
 
 .header h1 {
@@ -94,7 +98,7 @@ body {
 .profile-image {
     width: 150px;
     margin: 0 auto;
-    padding:0;
+    padding: 0;
 }
 
 .workspace {
@@ -123,7 +127,7 @@ body {
 
 .about h2 {
     font-size: 2.2rem;
-    padding-bottom: 30px;
+    padding: 0 20px 30px 20px;
 }
 
 .about p {
@@ -186,7 +190,7 @@ body {
 
 /* Projects Section */
 .projects {
-    padding: 80px 20px;
+    padding: 0px 20px 80px 20px;
     text-align: center;
 }
 
@@ -236,6 +240,10 @@ body {
     transform: scale(1.05);
 }
 
+
+.projects .contact-btn{
+    margin-top: 20px;
+}
 
 /* Skills Section */
 .skills {
@@ -366,7 +374,7 @@ body {
     color: #fff;
 }
 
-#thankyou-message{
+#thankyou-message {
     display: none;
     margin: 20px 0px;
     color: var(--purplebeli);
@@ -377,7 +385,7 @@ body {
 }
 
 .close-btn {
-position: absolute;
+    position: absolute;
     top: 50px;
     right: 75px;
     width: 36px;
@@ -467,6 +475,48 @@ position: absolute;
 .skill-percentage {
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+
+/**** footer clair ****/
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--blanccreme);
+  color: var(--purplebeli);
+}
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 20px;
+}
+
+.social-links .icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--purplebeli);
+  transition: all 0.3s ease;
+}
+
+.social-links a[aria-label="LinkedIn"]:hover .icon {
+  fill: #0077b5; /* LinkedIn blue */
+}
+
+.social-links a[aria-label="Instagram"]:hover .icon {
+  fill: #e1306c; /* Instagram pink */
+}
+
+.social-links a[aria-label="Malt"]:hover .icon {
+  fill: #ff7043; /* Malt orange */
+}
+
+.footer-text {
+  font-size: 0.85rem;
+  opacity: 0.7;
 }
 
 /* Responsive Design */

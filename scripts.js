@@ -114,9 +114,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-function openContact() {
-    if (document.querySelector(".contact").style.display = "none") {
-        document.querySelector(".contact").style.display = "flex";
+function openContact(event) {
+    event.preventDefault();
+    const contact = document.querySelector(".contact");
+    if (contact.style.display === "none") {
+        contact.style.display = "flex";
     }
 }
 

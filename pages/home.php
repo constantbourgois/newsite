@@ -15,7 +15,7 @@
             <div class="service-card">
                 <h3>Frontend &amp; Design &amp; Intégration</h3>
                 <p>Réflexion U.X., réalisation d' UI</p>
-                <p>Html, Css, Twig, React, Gsap, Vanilla Js, Tailwind</p>
+                <p>Html, Css, Twig, React, Gsap, Javascript</p>
                 <p>Tailwind CSS, Bootstrap, Material UI, Figma, Git, Vscode</p>
             </div>
             <div class="service-card">
@@ -27,19 +27,22 @@
                 <h3>Relationnel</h3>
                 <ul>
                     <li>
-                        écoute
+                        Écoute
                     </li>
                     <li>
-                        découverte du besoin
+                        Découverte du besoin
                     </li>
                     <li>
-                        gestion de projet
+                        Gestion de projet
                     </li>
                     <li>
-                        collaboration
+                        Collaboration
                     </li>
                     <li>
-                        vision produit
+                        Vision produit
+                    </li>
+                     <li>
+                       Français, anglais, espagnol
                     </li>
                 </ul>
             </div>
@@ -48,20 +51,32 @@
 
     <!-- Projects Section -->
     <section class="projects">
-        <h2>Mes projets à l'avant</h2>
+        <h2>Mes projets</h2>
         <p class="projects-intro">
             Voici quelques projets sur lesquels j'ai travaillé.<br>
-            Envie d'en voir plus? Contactez-moi.
+            Envie d'en savoir plus ? <a onclick="openContact(event)" href="#"> <strong>Contactez-moi </strong></a>
         </p>
         <div class="projects-grid">
-            <a class="project-logo"><img src="img/logo-fff.svg" alt="fff" /></a>
-            <a class="project-logo"><img src="img/logo-norgren.png" alt="fff" /></a>
-            <a class="project-logo"><img src="img/logo-gn.webp" alt="fff" /></a>
-            <a class="project-logo"><img src="img/logo-duel.svg" alt="fff" /></a>
-            <a class="project-logo"><img src="img/logo-sunevasion.svg" alt="fff" /></a>
-            <a class="project-logo"><img src="img/logo-mafc.png" alt="fff" /></a>
+            <a class="project-logo" href="https://www.fff.fr/" target="_blank" rel="noopener">
+                <img src="img/logo-fff.svg" alt="FFF logo stylized in bold letters representing the French Football Federation, modern and professional design, white background" />
+            </a>
+            <a class="project-logo" href="https://www.norgren.com/" target="_blank" rel="noopener">
+                <img src="img/logo-norgren.png" alt="Norgren company logo with red and gray elements, industrial and technical atmosphere, clean and precise style" />
+            </a>
+            <a class="project-logo" href="https://asso-generationnumerique.fr/" target="_blank" rel="noopener">
+                <img src="img/logo-gn.webp" alt="GN logo with overlapping letters in blue and green, representing Groupe Numérique, contemporary and innovative mood, minimal background" />
+            </a>
+            <a class="project-logo" href="https://duel.constantbourgois.com" target="_blank" rel="noopener">
+                <img src="img/logo-duel.svg" alt="Duel logo with geometric shapes and the word Duel in uppercase, dynamic and energetic design, neutral background" />
+            </a>
+            <a class="project-logo" href="https://www.sunevasion.fr/" target="_blank" rel="noopener">
+                <img src="img/logo-sunevasion.svg" alt="Sun Evasion logo with a stylized sun and wave, text Sun Evasion, bright and optimistic tone, evokes travel and leisure" />
+            </a>
+            <a class="project-logo" href="https://maisondelarchi-fc.fr/" target="_blank" rel="noopener">
+                <img src="img/logo-mafc.png" alt="MAFC logo with blue and white color scheme, text MAFC, formal and trustworthy appearance, simple background" />
+            </a>
         </div>
-        <a class="contact-btn" onclick="openContact()" href="#"> Contactez-moi </a>
+          <a class="contact-btn" href="#" onclick="openContact(event)">Contactez-moi</a>
     </section>
     <section style="display:none" class="contact">
         <div id="thankyou-message">
