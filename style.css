@@ -96,9 +96,13 @@ body {
 }
 
 .profile-image {
-    width: 150px;
+    width: 250px;
     margin: 0 auto;
     padding: 0;
+   @media (max-width: 768px) {
+    width:150px;
+        
+    }
 }
 
 .workspace {
