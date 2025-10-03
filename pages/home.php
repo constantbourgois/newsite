@@ -5,7 +5,7 @@
             numériques performants.</p>
         <p>Habitué au travail à distance, j'ai collaboré avec des équipes variées sur des projets B2B et grand public.
         </p>
-        <p>Curieux et passionné, je mêle sens du design et exigence technique pour créer des solutions élégantes et
+        <p>Curieux et passionné, je mêle exigence technique et sens du design pour créer des solutions élégantes et
             efficaces.</p>
     </section>
 
@@ -80,7 +80,7 @@
 
     <!-- Skills Section -->
     <section class="skills">
-        <h2>D'autres compétences qui pourraient s'avérer utiles</h2>
+        <h2>D'autres compétences <br>qui pourraient s'avérer utiles</h2>
         
         <div class="skills-chart">
             <div class="skill-bar">
