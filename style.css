@@ -516,6 +516,16 @@ main{
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .projects{
+        padding-bottom: 0;
+    }
+    .skills{
+        display: none;
+    }
+    .sub-header{
+        visibility: hidden;
+    }
+
     .header h1 {
         font-size: 2rem;
     }
