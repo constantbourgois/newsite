@@ -363,7 +363,7 @@ main {
 
 .close-btn {
     position: absolute;
-    right: 15px;
+    right: 0px;
     width: 36px;
     height: 36px;
     background: transparent;
