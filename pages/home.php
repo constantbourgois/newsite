@@ -125,7 +125,10 @@
             Merci !
         </div>
         <form id="contactform" method="post">
-             <a target="_blank" class="whatsapp-btn" href="https://wa.me/33662136262"><img src="img/whatsapp-icon.png" alt="whatsapp"></a>
+            <div class="wrap-contact">
+            <a target="_blank" class="whatsapp-btn" href="https://wa.me/33662136262"><img src="img/whatsapp-icon.png" alt="whatsapp"></a>
+            <button class="close-btn" onclick="closeContact()" aria-label="Fermer le formulaire">×</button>
+            </div>
             <h4 id="titlecontact">Contactez-moi !</h4>
             <label for="u_name">Nom</label>
             <input type="text" id="u_name" name="u_name" placeholder="Votre nom" required />
@@ -135,5 +138,5 @@
             <textarea name="message" id="message" rows="6" cols="45" placeholder="Laissez-moi un petit mot" required></textarea>
             <input id="submit" type="submit" value="Envoyer" class="valider" />
         </form>
-        <button class="close-btn" onclick="closeContact()" aria-label="Fermer le formulaire">×</button>
+        
     </section>

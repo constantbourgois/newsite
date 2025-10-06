@@ -355,10 +355,15 @@ main {
     border: 1px solid var(--purplebeli);
 }
 
+.wrap-contact{
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+
 .close-btn {
     position: absolute;
-    top: 25px;
-    right: 55px;
+    right: 15px;
     width: 36px;
     height: 36px;
     background: transparent;
