@@ -12,6 +12,9 @@
         <p class="subtitle">Je code des choses merveilleusement simples, et j'aime ce que je fais</p>
         <div class="profile-image"><img src="img/avatar.png" alt="myavatar"></div>
         <div class="workspace">
-            <img src="img/workspace.png" alt="workspace" />
+            <picture>
+              <source srcset="img/workspace-mobile.png" media="(max-width: 768px)">
+              <img src="img/workspace.png" alt="workspace">
+            </picture>
         </div>
     </header>
