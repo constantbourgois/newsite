@@ -41,8 +41,8 @@
                     <li>
                         Vision produit
                     </li>
-                     <li>
-                       Français, anglais, espagnol
+                    <li>
+                        Français, anglais, espagnol
                     </li>
                 </ul>
             </div>
@@ -81,7 +81,7 @@
     <!-- Skills Section -->
     <section class="skills">
         <h2>D'autres compétences <br>qui pourraient s'avérer utiles</h2>
-        
+
         <div class="skills-chart">
             <div class="skill-bar">
                 <div class="skill-name">Support téléphonique</div>
@@ -120,11 +120,12 @@
             </div>
         </div>
     </section>
-        <section style="display:none" class="contact">
+    <section style="display:none" class="contact">
         <div id="thankyou-message">
             Merci !
         </div>
         <form id="contactform" method="post">
+             <a target="_blank" class="whatsapp-btn" href="https://wa.me/33662136262"><img src="img/whatsapp-icon.png" alt="whatsapp"></a>
             <h4 id="titlecontact">Contactez-moi !</h4>
             <label for="u_name">Nom</label>
             <input type="text" id="u_name" name="u_name" placeholder="Votre nom" required />
